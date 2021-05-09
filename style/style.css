@@ -74,7 +74,7 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 .container {
-  width: 80vw;
+  width: 85vw;
   margin: auto;
 }
 
@@ -95,15 +95,17 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #home h3 {
+  line-height: 1.5rem;
   font-size: 1rem;
   text-transform: capitalize;
   font-weight: 400;
   margin: 0.5rem;
+  color: #727272;
 }
 
 #home button {
-  border: 1px solid #444444;
-  background: #444444;
+  border: 1px solid #31c06d;
+  background: #31c06d;
   font-size: 1.8rem;
   padding: 0.5rem 1rem;
   margin-top: 2rem;
@@ -115,8 +117,8 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #home button:hover {
-  border: 1px solid #303030;
-  background: #303030;
+  border: 1px solid #1eb35c;
+  background: #1eb35c;
 }
 
 #upWork {
@@ -145,37 +147,37 @@ nav a:nth-child(5):hover ~ .animation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 #upWork .upWorkAlign .img {
-  width: 37rem;
+  width: 36rem;
   text-align: center;
 }
 
-#upWork .upWorkAlign .img h1 {
-  font-size: 3rem;
-  margin: 0px;
+#upWork .upWorkAlign .img img {
+  width: 80%;
 }
 
 #upWork .upWorkAlign .text {
-  width: 37rem;
+  width: 36rem;
 }
 
 #upWork .upWorkAlign .text .points {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 2px solid #adadad;
+  border-bottom: 2px solid #e4e4e4;
   padding: 1rem 0rem;
 }
 
 #upWork .upWorkAlign .text .points .number {
   width: 4rem;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #ff5858;
 }
 
@@ -213,14 +215,15 @@ nav a:nth-child(5):hover ~ .animation {
   display: -ms-flexbox;
   display: flex;
   padding-top: 2rem;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 #gitHub .gitHubAlign .gitHubText {
-  width: 37rem;
+  width: 36rem;
   padding-top: 1.2rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -263,16 +266,10 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #gitHub .gitHubAlign .gitHubImg {
-  width: 37rem;
+  width: 36rem;
 }
 
 #gitHub .gitHubAlign .gitHubImg img {
   width: 100%;
-}
-
-@media only screen and (max-width: 600px) {
-  .container {
-    width: 50vw;
-  }
 }
 /*# sourceMappingURL=style.css.map */
