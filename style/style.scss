@@ -80,7 +80,7 @@ nav{
     margin: auto;
     padding:6rem 0px 8rem 0px;
     text-align: center;
-    height: 80vh;
+    height: 40rem;
     width: 100%;
     background-image: url(../img/todoist.png);
     background-repeat: no-repeat;
@@ -183,3 +183,9 @@ section{
 h1,h2,h3,h3,h5,h6,p{
     // border:1px solid blue;
 }
+
+@media only screen and (max-width: 600px) {
+    #home{
+        height: 50vh;
+    }
+  }
