@@ -16,8 +16,8 @@ nav {
   border-radius: 8px;
   font-size: 0;
   z-index: 1;
-  -webkit-box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.329);
-          box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.329);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.329);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.329);
 }
 
 nav a {
@@ -37,10 +37,10 @@ nav a {
 nav .animation {
   position: absolute;
   height: 10%;
-  top: 0%;
+  top: 90%;
   left: 0px;
   color: white;
-  width: 747px;
+  width: 750px;
   z-index: 0;
   border-radius: 8px;
   -webkit-transition: all 250ms ease 0s;
@@ -74,25 +74,30 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 .container {
-  width: 90vw;
+  width: 80vw;
   margin: auto;
 }
 
 #home {
   margin: auto;
-  padding: 6rem 0px 8rem 0px;
+  padding: 10rem 0px 10rem 0px;
   text-align: center;
-  height: 40rem;
   width: 100%;
-  background-image: url(../img/todoist.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 #home h1 {
-  font-size: 3rem;
+  font-size: 5rem;
+  font-family: 'Dancing Script', cursive;
   text-transform: capitalize;
+  margin: 0.5rem;
+}
+
+#home h3 {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 400;
   margin: 0.5rem;
 }
 
@@ -101,36 +106,42 @@ nav a:nth-child(5):hover ~ .animation {
   background: #444444;
   font-size: 1.8rem;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  margin-top: 2rem;
+  border-radius: 4px;
   color: white;
   cursor: pointer;
+  -webkit-transition: 250ms;
+  transition: 250ms;
 }
 
 #home button:hover {
-  border: 1px solid #05da5e;
-  background: #05da5e;
+  border: 1px solid #303030;
+  background: #303030;
 }
 
-#home img {
-  width: 100%;
+#upWork {
+  padding: 4rem 0rem;
 }
 
-#gitHub .title {
+#upWork .upWorkTItle {
   text-align: center;
 }
 
-#gitHub .title h1 {
+#upWork .upWorkTItle h1 {
   font-size: 3rem;
   text-transform: capitalize;
   margin: 0px;
 }
 
-#gitHub .title p {
-  color: #727272;
-  font-weight: 400;
+#upWork .upWorkTItle h1:nth-child(2) {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin: 0px;
+  color: #ffc34a;
 }
 
-#gitHub .gitHubAlign {
+#upWork .upWorkAlign {
+  padding-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,9 +151,77 @@ nav a:nth-child(5):hover ~ .animation {
       flex-wrap: wrap;
 }
 
-#gitHub .gitHubAlign .gitHubText {
-  width: 42rem;
+#upWork .upWorkAlign .img {
+  width: 37rem;
+  text-align: center;
+}
+
+#upWork .upWorkAlign .img h1 {
+  font-size: 3rem;
+  margin: 0px;
+}
+
+#upWork .upWorkAlign .text {
+  width: 37rem;
+}
+
+#upWork .upWorkAlign .text .points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid #adadad;
+  padding: 1rem 0rem;
+}
+
+#upWork .upWorkAlign .text .points .number {
+  width: 4rem;
+  font-size: 3rem;
+  color: #ff5858;
+}
+
+#upWork .upWorkAlign .text .points .discription {
+  padding: 0rem 1rem;
+  line-height: 1.6rem;
+  width: 38rem;
+  color: #727272;
+  font-size: 1.2rem;
+}
+
+#gitHub {
+  padding: 4rem 0rem;
+}
+
+#gitHub .gitHubTitle {
+  text-align: center;
+}
+
+#gitHub .gitHubTitle h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+#gitHub .gitHubTitle h1:nth-child(2) {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin: 0px;
+  color: #ff5858;
+}
+
+#gitHub .gitHubAlign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 2rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#gitHub .gitHubAlign .gitHubText {
+  width: 37rem;
+  padding-top: 1.2rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -150,18 +229,15 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #gitHub .gitHubAlign .gitHubText h1 {
-  font-size: 2.8rem;
-  margin-bottom: 0px;
-}
-
-#gitHub .gitHubAlign .gitHubText h1 span {
-  font-size: 2.5rem;
-  color: #ff5858;
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin: 0px;
 }
 
 #gitHub .gitHubAlign .gitHubText h3 {
   color: #727272;
   font-weight: 400;
+  font-size: 1.2rem;
 }
 
 #gitHub .gitHubAlign .gitHubText div {
@@ -173,7 +249,8 @@ nav a:nth-child(5):hover ~ .animation {
   background: #444444;
   font-size: 1.8rem;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  margin-top: 2rem;
+  border-radius: 4px;
   color: white;
   cursor: pointer;
   -webkit-transition: 250ms;
@@ -181,12 +258,12 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #gitHub .gitHubAlign .gitHubText div button:hover {
-  border: 1px solid #fd3333;
-  background: #fd3333;
+  border: 1px solid #303030;
+  background: #303030;
 }
 
 #gitHub .gitHubAlign .gitHubImg {
-  width: 42rem;
+  width: 37rem;
 }
 
 #gitHub .gitHubAlign .gitHubImg img {
@@ -194,8 +271,8 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 @media only screen and (max-width: 600px) {
-  #home {
-    height: 50vh;
+  .container {
+    width: 50vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
