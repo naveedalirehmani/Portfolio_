@@ -11,11 +11,13 @@ nav {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  width: 500px;
+  width: 750px;
+  background: white;
   border-radius: 8px;
   font-size: 0;
-  -webkit-box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.137);
-          box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.137);
+  z-index: 1;
+  -webkit-box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.329);
+          box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.329);
 }
 
 nav a {
@@ -29,39 +31,106 @@ nav a {
   z-index: 2;
   display: inline-block;
   text-align: center;
-  width: 100px;
+  width: 150px;
 }
 
 nav .animation {
   position: absolute;
   height: 10%;
-  top: 90%;
+  top: 0%;
   left: 0px;
-  width: 100px;
+  color: white;
+  width: 747px;
   z-index: 0;
-  background: #4b4bff;
   border-radius: 8px;
-  -webkit-transition: all .5s ease 0s;
-  transition: all .5s ease 0s;
+  -webkit-transition: all 250ms ease 0s;
+  transition: all 250ms ease 0s;
+  background: #ff5858;
+}
+
+nav a:nth-child(1):hover ~ .animation {
+  left: 0px;
+  width: 150px;
 }
 
 nav a:nth-child(2):hover ~ .animation {
-  left: 100px;
+  left: 150px;
+  width: 150px;
 }
 
 nav a:nth-child(3):hover ~ .animation {
-  left: 200px;
+  left: 300px;
+  width: 150px;
 }
 
 nav a:nth-child(4):hover ~ .animation {
-  left: 300px;
+  left: 450px;
+  width: 150px;
 }
 
 nav a:nth-child(5):hover ~ .animation {
-  left: 400px;
+  left: 600px;
+  width: 150px;
+}
+
+.container {
+  width: 90vw;
+  margin: auto;
 }
 
 #home {
+  margin: auto;
+  padding: 6rem 0px 8rem 0px;
+  text-align: center;
+  height: 80vh;
+  width: 100%;
+  background-image: url(../img/todoist.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#home h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin: 0.5rem;
+}
+
+#home button {
+  border: 1px solid #444444;
+  background: #444444;
+  font-size: 1.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+#home button:hover {
+  border: 1px solid #05da5e;
+  background: #05da5e;
+}
+
+#home img {
+  width: 100%;
+}
+
+#gitHub .title {
+  text-align: center;
+}
+
+#gitHub .title h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+#gitHub .title p {
+  color: #727272;
+  font-weight: 400;
+}
+
+#gitHub .gitHubAlign {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,18 +138,58 @@ nav a:nth-child(5):hover ~ .animation {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 8rem 0px;
 }
 
-#home .homeText {
-  width: 45rem;
+#gitHub .gitHubAlign .gitHubText {
+  width: 42rem;
+  padding-top: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#home .homeImg {
-  width: 45rem;
+#gitHub .gitHubAlign .gitHubText h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0px;
 }
 
-#home .homeImg img {
+#gitHub .gitHubAlign .gitHubText h1 span {
+  font-size: 2.5rem;
+  color: #ff5858;
+}
+
+#gitHub .gitHubAlign .gitHubText h3 {
+  color: #727272;
+  font-weight: 400;
+}
+
+#gitHub .gitHubAlign .gitHubText div {
+  text-align: center;
+}
+
+#gitHub .gitHubAlign .gitHubText div button {
+  border: 1px solid #444444;
+  background: #444444;
+  font-size: 1.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+#gitHub .gitHubAlign .gitHubText div button:hover {
+  border: 1px solid #fd3333;
+  background: #fd3333;
+}
+
+#gitHub .gitHubAlign .gitHubImg {
+  width: 42rem;
+}
+
+#gitHub .gitHubAlign .gitHubImg img {
   width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

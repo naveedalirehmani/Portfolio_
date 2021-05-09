@@ -6,30 +6,53 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;600&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
 
       <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
-        <a href="#">Blog</a>
         <a href="#">Portfolio</a>
+        <a href="#">Blog</a>
         <a href="#">Github</a>
         <div class="animation start-home"></div>
       </nav>
-      
+      <div class="container" >
+        
+        <div id="home" >
+          <div  data-aos="fade-down">
+            <h1>Interested to work <br> with me?</h1>
+          <button>UpWork.</button>
+          </div>
+        </div>
+        
 
-      <section id="home">
-        <div class="homeText">
-          <h1>Join Our Team</h1>
-          <h3>We create the best Landing Pages With Next Level HTML/CSS, JavaScript Animation & UI Motion</h3>
+        <section id="gitHub">
+          <div class="title">
+            <h1>Interested to work with me?</h1>
+            <p>We create the best Landing Pages With Next Level HTML/CSS, JavaScript Animation & UI Motion.</p>
+          </div>
+          <div class="gitHubAlign">
+            <div class="gitHubText" data-aos="fade-right">
+              <h1>Join Our Team. <span>Work with us</span></h1>
+              <h3>We create the best Landing Pages With Next Level HTML/CSS, JavaScript Animation & UI Motion</h3>
+              <div>
+                <button>GitHub</button>
+
+              </div>
+            </div>
+            <div class="gitHubImg" data-aos="fade-left">
+              <img 
+              src="./img/HomeOrange.svg" alt="">
+            </div>
+          </div>
         </div>
-        <div class="homeImg">
-          <img 
-          src="./img/HomeOrange.svg" alt="">
-        </div>
-      </section>
-    
+
+        </section>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <script>
+            AOS.init();
+       </script>
   </body>
 </html>
