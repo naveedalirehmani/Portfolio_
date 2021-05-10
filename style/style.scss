@@ -163,7 +163,7 @@ nav{
                 .discription{
                     padding:0rem 1rem;
                     line-height: 1.6rem;
-                    width:38rem;
+                    // width:38rem;
                     color:$text;
                     font-size: $medium;
                 }
@@ -172,21 +172,65 @@ nav{
 
     }
 }
-#gitHub{
+
+#skills{
     padding:4rem 0rem;
-    .gitHubTitle{
+    .skillTitle{
         text-align: center;
         h1{
             font-size:$large;
             text-transform: capitalize;
             margin: 0px;
         }
-        h1:nth-child(2){
+        h3{
+            font-size:$medium;
+            text-transform: capitalize;
+            font-weight: 500;
+            margin: 0px;
+            color:$text;
+        }
+    }
+    .skillTiles{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top:2rem;
+        div{
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.164);
+           border-radius:20px;
+            margin:1rem 1rem;
+            width:13rem;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width:50%;
+                height:auto;
+            }
+            h3{
+                font-size: $medium;
+            }
+        }
+    }
+}
+
+#gitHub{
+    padding:4rem 0rem;
+    
+    .gitHubTitle{
+        text-align: center;
+        // margin-bottom: 2rem;
+        h1{
             font-size:$large;
             text-transform: capitalize;
             margin: 0px;
-            color:$red;
+            span{
+                color:$red;
+            }
         }
+        
     }
     .gitHubAlign{
         display: flex;
@@ -199,7 +243,7 @@ nav{
             padding-top:$medium;
             flex-direction: column;
             h1{
-                font-size:$large;
+                font-size:2rem;
                 text-transform: capitalize;
                 margin: 0px;
             }
@@ -249,3 +293,17 @@ h1,h2,h3,h3,h5,h6,p{
     // border:1px solid blue;
 }
 
+// @media only screen and (max-width: 767px) {
+//     #upWork .upWorkAlign .img {
+//         width: 51rem;
+//     }
+//     #upWork .upWorkAlign .text {
+//         width: 51rem;
+//     }
+//     #gitHub .gitHubAlign .gitHubText {
+//         width: 51rem;
+//     }
+//     #gitHub .gitHubAlign .gitHubImg {
+//         width: 51rem;
+//     }
+// }
