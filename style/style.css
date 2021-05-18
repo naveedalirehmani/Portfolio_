@@ -1,6 +1,16 @@
+::-moz-selection {
+  color: black;
+  background-color: rgba(255, 221, 158, 0.514);
+}
+
+::selection {
+  color: black;
+  background-color: rgba(255, 221, 158, 0.514);
+}
+
 body {
-  font-family: 'lexend', sans-serif;
-  /* background: #2c3e50; */
+  font-family: "lexend", sans-serif;
+  background: #f6f7fb;
   margin: 0px;
   padding: 0px;
 }
@@ -32,12 +42,13 @@ nav a {
   display: inline-block;
   text-align: center;
   width: 150px;
+  /* transform: translate(0%, -100%); */
 }
 
 nav .animation {
   position: absolute;
-  height: 10%;
-  top: 90%;
+  height: 8%;
+  top: 92%;
   left: 0px;
   color: white;
   width: 750px;
@@ -74,22 +85,20 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 .container {
-  width: 85vw;
+  max-width: 1200px;
   margin: auto;
 }
 
 #home {
   margin: auto;
-  padding: 10rem 0px 10rem 0px;
+  padding: 10rem 0px 5rem 0px;
   text-align: center;
   width: 100%;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
 }
 
 #home h1 {
   font-size: 5rem;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   text-transform: capitalize;
   margin: 0.5rem;
 }
@@ -100,13 +109,13 @@ nav a:nth-child(5):hover ~ .animation {
   text-transform: capitalize;
   font-weight: 400;
   margin: 0.5rem;
-  color: #727272;
+  color: #6e6e6e;
 }
 
 #home button {
   border: 1px solid #31c06d;
   background: #31c06d;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 0.5rem 1rem;
   margin-top: 2rem;
   border-radius: 4px;
@@ -122,7 +131,7 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #upWork {
-  padding: 4rem 0rem;
+  padding: 0rem 0rem 5rem 0rem;
 }
 
 #upWork .upWorkTItle {
@@ -130,20 +139,19 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #upWork .upWorkTItle h1 {
-  font-size: 3rem;
-  text-transform: capitalize;
+  font-size: 2rem;
   margin: 0px;
 }
 
 #upWork .upWorkTItle h1:nth-child(2) {
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: capitalize;
   margin: 0px;
-  color: #ffc34a;
+  color: #ff5858;
 }
 
 #upWork .upWorkAlign {
-  padding-top: 2rem;
+  padding-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,7 +168,7 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #upWork .upWorkAlign .img img {
-  width: 80%;
+  width: 78%;
 }
 
 #upWork .upWorkAlign .text {
@@ -172,7 +180,7 @@ nav a:nth-child(5):hover ~ .animation {
   display: -ms-flexbox;
   display: flex;
   border-bottom: 2px solid #e4e4e4;
-  padding: 1rem 0rem;
+  padding: 2rem 0rem;
 }
 
 #upWork .upWorkAlign .text .points .number {
@@ -184,12 +192,12 @@ nav a:nth-child(5):hover ~ .animation {
 #upWork .upWorkAlign .text .points .discription {
   padding: 0rem 1rem;
   line-height: 1.6rem;
-  color: #727272;
-  font-size: 1.2rem;
+  color: #6e6e6e;
+  font-size: 1rem;
 }
 
 #skills {
-  padding: 4rem 0rem;
+  padding: 0rem 0rem;
 }
 
 #skills .skillTitle {
@@ -197,17 +205,15 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #skills .skillTitle h1 {
-  font-size: 3rem;
-  text-transform: capitalize;
+  font-size: 2rem;
   margin: 0px;
 }
 
-#skills .skillTitle h3 {
-  font-size: 1.2rem;
+#skills .skillTitle h1:nth-child(2) {
+  font-size: 2rem;
   text-transform: capitalize;
-  font-weight: 500;
   margin: 0px;
-  color: #727272;
+  color: #ff5858;
 }
 
 #skills .skillTiles {
@@ -219,16 +225,31 @@ nav a:nth-child(5):hover ~ .animation {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 2rem;
+  padding: 5rem 0rem;
 }
 
 #skills .skillTiles div {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.164);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.164);
-  border-radius: 20px;
-  margin: 1rem 1rem;
-  width: 13rem;
-  height: 10rem;
+  width: 11rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.5rem;
+}
+
+#skills .skillTiles div div {
+  margin-top: 1rem;
+  -webkit-box-shadow: 0 0px 20px 0 #e4e6ee;
+          box-shadow: 0 0px 20px 0 #e4e6ee;
+  padding: 0.5rem 0rem;
+  background-color: #fff;
+  border-radius: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,17 +265,20 @@ nav a:nth-child(5):hover ~ .animation {
           align-items: center;
 }
 
-#skills .skillTiles div img {
-  width: 50%;
+#skills .skillTiles div div img {
+  width: 45%;
   height: auto;
 }
 
-#skills .skillTiles div h3 {
-  font-size: 1.2rem;
+#skills .skillTiles div div h3 {
+  margin: 0px;
+  font-weight: 400;
+  color: #6e6e6e;
+  font-size: 1rem;
 }
 
 #gitHub {
-  padding: 4rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
 }
 
 #gitHub .gitHubTitle {
@@ -262,12 +286,14 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #gitHub .gitHubTitle h1 {
-  font-size: 3rem;
-  text-transform: capitalize;
+  font-size: 2rem;
   margin: 0px;
 }
 
-#gitHub .gitHubTitle h1 span {
+#gitHub .gitHubTitle h1:nth-child(2) {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin: 0px;
   color: #ff5858;
 }
 
@@ -275,7 +301,7 @@ nav a:nth-child(5):hover ~ .animation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 2rem;
+  padding-top: 5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -285,11 +311,12 @@ nav a:nth-child(5):hover ~ .animation {
 
 #gitHub .gitHubAlign .gitHubText {
   width: 36rem;
-  padding-top: 1.2rem;
+  padding-top: 1rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
 }
 
 #gitHub .gitHubAlign .gitHubText h1 {
@@ -299,9 +326,9 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #gitHub .gitHubAlign .gitHubText h3 {
-  color: #727272;
+  color: #6e6e6e;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #gitHub .gitHubAlign .gitHubText div {
@@ -311,7 +338,7 @@ nav a:nth-child(5):hover ~ .animation {
 #gitHub .gitHubAlign .gitHubText div button {
   border: 1px solid #444444;
   background: #444444;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 0.5rem 1rem;
   margin-top: 2rem;
   border-radius: 4px;
