@@ -98,6 +98,7 @@ nav {
     font-family: "Dancing Script", cursive;
     text-transform: capitalize;
     margin: 0.5rem;
+    padding: 0rem 1rem;
   }
   h3 {
     line-height: 1.5rem;
@@ -130,6 +131,7 @@ nav {
     h1 {
       font-size: $large;
       margin: 0px;
+      padding: 0rem 1rem;
     }
     h1:nth-child(2) {
       font-size: $large;
@@ -308,29 +310,29 @@ h1,h2,h3,h3,h5,h6,p {
     }
   }
     #upWork .upWorkAlign .img {
-        width: 80vw;
+        width: 87vw;
     }
     #upWork .upWorkAlign .text {
-        width: 80vw;
+        width: 87vw;
     }
     #gitHub .gitHubAlign .gitHubText {
-        width: 80vw;
+        width: 87vw;
     }
     #gitHub .gitHubAlign .gitHubImg {
-        width: 80vw;
+        width: 87vw;
     }
     nav{
       display: none ;
     }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 595px) {
   #home{
     h1{
       font-size: 3rem;
     }
   }
 }
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 465px) {
   #home{
     h1{
       font-size: 2.5rem;
