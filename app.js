@@ -24,3 +24,16 @@ navbar.addEventListener('click',()=>{
         body.style.overflow="scroll"
     }
 })
+
+const scrolla = document.querySelectorAll('.scroll')
+scrolla.forEach(item => {
+item.addEventListener('click',()=>{
+        first.style.transform = 'none';
+        second.style.opacity= '100%'
+        third.style.transform = 'none';
+        navbarStatus = false;
+        mobileNavbar.style.display="none"
+        body.style.overflow="auto"
+
+})
+})
