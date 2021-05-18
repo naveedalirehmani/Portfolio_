@@ -84,7 +84,7 @@ nav {
 }
 .wrapper,.mobilewrapper{
   display: none;
-  position: fixed;
+  position: absolute;
   top: 6%;
   right: 1%;
   transform: translate(-50%,-50%);
