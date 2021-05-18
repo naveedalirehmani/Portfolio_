@@ -281,6 +281,10 @@ nav a:nth-child(5):hover ~ .animation {
   font-size: 1rem;
 }
 
+#skills .skillTiles .mobileView {
+  display: none;
+}
+
 #gitHub {
   padding: 0rem 0rem 0rem 0rem;
 }
@@ -363,6 +367,83 @@ nav a:nth-child(5):hover ~ .animation {
 
 #gitHub .gitHubAlign .gitHubImg img {
   width: 100%;
+}
+
+@media only screen and (max-width: 995px) {
+  #skills {
+    padding: 0rem 0rem;
+  }
+  #skills .skillTitle {
+    text-align: center;
+  }
+  #skills .skillTitle h1 {
+    font-size: 2rem;
+    margin: 0px;
+  }
+  #skills .skillTitle h1:nth-child(2) {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #ff5858;
+  }
+  #skills .skillTiles .desktopView {
+    display: none;
+  }
+  #skills .skillTiles .mobileView {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #skills .skillTiles .mobileView .small {
+    width: 180px;
+    height: 60px;
+  }
+  #skills .skillTiles .mobileView .medium {
+    width: 260px;
+    height: 80px;
+  }
+  #skills .skillTiles .mobileView .large {
+    width: 320px;
+    height: 100px;
+  }
+  #skills .skillTiles .mobileView div {
+    margin-top: 1rem;
+    -webkit-box-shadow: 0 0px 20px 0 #e4e6ee;
+            box-shadow: 0 0px 20px 0 #e4e6ee;
+    padding: 0.7rem 0rem;
+    background-color: #fff;
+    border-radius: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #skills .skillTiles .mobileView div img {
+    width: 30%;
+    height: auto;
+  }
+  #skills .skillTiles .mobileView div h3 {
+    margin: 0px;
+    font-weight: 400;
+    color: #6e6e6e;
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
