@@ -171,7 +171,7 @@ nav a:nth-child(5):hover ~ .animation {
 
 #home {
   margin: auto;
-  padding: 8rem 0px 10rem 0px;
+  padding: 8rem 0px 8rem 0px;
   text-align: center;
   width: 100%;
 }
@@ -188,8 +188,26 @@ nav a:nth-child(5):hover ~ .animation {
           animation-name: homeText;
   -webkit-animation-timing-function: cubic-bezier();
           animation-timing-function: cubic-bezier();
-  -webkit-animation-duration: 1500ms;
-          animation-duration: 1500ms;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+}
+
+@-webkit-keyframes homeText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes homeText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 #home h3 {
@@ -224,24 +242,6 @@ nav a:nth-child(5):hover ~ .animation {
 #home button:hover {
   border: 1px solid #1eb35c;
   background: #1eb35c;
-}
-
-@-webkit-keyframes homeText {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes homeText {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
 }
 
 #upWork {
@@ -283,7 +283,7 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #upWork .upWorkAlign .img img {
-  width: 78%;
+  width: 82%;
 }
 
 #upWork .upWorkAlign .text {
@@ -393,6 +393,33 @@ nav a:nth-child(5):hover ~ .animation {
   font-size: 1rem;
 }
 
+#skills .skillTiles .desktopView .react img {
+  -webkit-animation: rotate 10s infinite linear;
+          animation: rotate 10s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 #skills .skillTiles .mobileView {
   display: none;
 }
@@ -431,7 +458,7 @@ nav a:nth-child(5):hover ~ .animation {
 
 #gitHub .gitHubAlign .gitHubText {
   width: 36rem;
-  padding-top: 1rem;
+  padding-bottom: 3rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -446,21 +473,17 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #gitHub .gitHubAlign .gitHubText h3 {
+  margin-top: 0rem;
   color: #6e6e6e;
   font-weight: 400;
   font-size: 1rem;
 }
 
-#gitHub .gitHubAlign .gitHubText div {
-  text-align: center;
-}
-
-#gitHub .gitHubAlign .gitHubText div button {
-  border: 1px solid #444444;
-  background: #444444;
+#gitHub .gitHubAlign .gitHubText div .upwork {
+  border: 1px solid #31c06d;
+  background: #31c06d;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
-  margin-top: 2rem;
   border-radius: 4px;
   color: white;
   cursor: pointer;
@@ -468,9 +491,83 @@ nav a:nth-child(5):hover ~ .animation {
   transition: 250ms;
 }
 
-#gitHub .gitHubAlign .gitHubText div button:hover {
-  border: 1px solid #303030;
-  background: #303030;
+#gitHub .gitHubAlign .gitHubText div .upwork:hover {
+  border: 1px solid #1eb35c;
+  background: #1eb35c;
+}
+
+#gitHub .gitHubAlign .gitHubText .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 3rem;
+}
+
+#gitHub .gitHubAlign .gitHubText .socialMedia .social {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px #d8d8d8;
+          box-shadow: 0px 0px 10px #d8d8d8;
+  position: relative;
+  margin: 1rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+#gitHub .gitHubAlign .gitHubText .socialMedia .social img {
+  width: 90%;
+}
+
+#gitHub .gitHubAlign .gitHubText .socialMedia .social .dataEmail, #gitHub .gitHubAlign .gitHubText .socialMedia .social .dataInstagram, #gitHub .gitHubAlign .gitHubText .socialMedia .social .dataGithub {
+  display: none;
+  font-size: 1rem;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, 110%);
+          transform: translate(50%, 110%);
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  position: absolute;
+}
+
+#gitHub .gitHubAlign .gitHubText .socialMedia .social .dataEmail:before, #gitHub .gitHubAlign .gitHubText .socialMedia .social .dataInstagram:before, #gitHub .gitHubAlign .gitHubText .socialMedia .social .dataGithub:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(-45deg);
+          transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+#gitHub .gitHubAlign .gitHubText .socialMedia .email:hover, #gitHub .gitHubAlign .gitHubText .socialMedia .email:hover .dataEmail, #gitHub .gitHubAlign .gitHubText .socialMedia .email:hover .dataEmail::before {
+  background-color: #df0303;
+  color: white;
+  display: block;
+  opacity: 100%;
+}
+
+#gitHub .gitHubAlign .gitHubText .socialMedia .github:hover, #gitHub .gitHubAlign .gitHubText .socialMedia .github:hover .dataGithub, #gitHub .gitHubAlign .gitHubText .socialMedia .github:hover .dataGithub::before {
+  background-color: #3f3f3f;
+  color: white;
+  display: block;
+  opacity: 100%;
+}
+
+#gitHub .gitHubAlign .gitHubText .socialMedia .instagram:hover, #gitHub .gitHubAlign .gitHubText .socialMedia .instagram:hover .dataInstagram, #gitHub .gitHubAlign .gitHubText .socialMedia .instagram:hover .dataInstagram::before {
+  background-color: #f8306c;
+  color: white;
+  display: block;
+  opacity: 100%;
 }
 
 #gitHub .gitHubAlign .gitHubImg {
@@ -478,7 +575,8 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #gitHub .gitHubAlign .gitHubImg img {
-  width: 100%;
+  width: 90%;
+  height: auto;
 }
 
 @media only screen and (max-width: 995px) {
@@ -527,6 +625,30 @@ nav a:nth-child(5):hover ~ .animation {
     width: 320px;
     height: 100px;
     border-radius: 9px;
+  }
+  #skills .skillTiles .mobileView .large img {
+    -webkit-animation: rotate 10s infinite linear;
+            animation: rotate 10s infinite linear;
+  }
+  @-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
   }
   #skills .skillTiles .mobileView div {
     margin-top: 1rem;

@@ -11,6 +11,7 @@ navbar.addEventListener('click',()=>{
     if(navbarStatus == false){
         first.style.transform = 'translate(0px,11px) rotate(45deg)';
         second.style.opacity= '0'
+        second.style.transform = 'translate(100px,0px)'
         third.style.transform = 'translate(0px,-11px) rotate(-45deg)';
         navbarStatus = true;
         body.style.overflow="hidden"
@@ -19,6 +20,7 @@ navbar.addEventListener('click',()=>{
         first.style.transform = 'none';
         second.style.opacity= '100%'
         third.style.transform = 'none';
+        second.style.transform = 'translate(0px,0px)'
         navbarStatus = false;
         mobileNavbar.style.display="none"
         body.style.overflow="scroll"
