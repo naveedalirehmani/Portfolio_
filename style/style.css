@@ -82,7 +82,7 @@ nav .animation {
   border-radius: 8px;
   -webkit-transition: all 250ms ease 0s;
   transition: all 250ms ease 0s;
-  background: #ff5858;
+  background: #444444;
 }
 
 nav a:nth-child(1):hover ~ .animation {
@@ -496,12 +496,12 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #gitHub .gitHubAlign .gitHubText div .upwork .dataUpwork {
-  font-size: 1.2rem;
+  font-size: 1rem;
   top: 50%;
   right: 50%;
-  -webkit-transform: translate(50%, 120%);
-          transform: translate(50%, 120%);
-  padding: 0.6rem 1rem;
+  -webkit-transform: translate(50%, 140%);
+          transform: translate(50%, 140%);
+  padding: 0.4rem 0.8rem;
   border-radius: 10px;
   position: absolute;
   background-color: #1eb35c;
@@ -512,9 +512,9 @@ nav a:nth-child(5):hover ~ .animation {
 #gitHub .gitHubAlign .gitHubText div .upwork .dataUpwork:before {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
-  top: -9px;
+  width: 10px;
+  height: 10px;
+  top: -5px;
   left: 50%;
   -webkit-transform: translate(-50%, 0%) rotate(-45deg);
           transform: translate(-50%, 0%) rotate(-45deg);
@@ -630,6 +630,28 @@ nav a:nth-child(5):hover ~ .animation {
 #gitHub .gitHubAlign .gitHubImg img {
   width: 90%;
   height: auto;
+}
+
+#footer {
+  background-color: #3f3f3f;
+  border-radius: 20px;
+  margin: 5rem 1rem 1rem 1rem;
+}
+
+#footer .footerDiv {
+  padding: 2rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+div {
+  border: 1px solid red;
 }
 
 @media only screen and (max-width: 995px) {
