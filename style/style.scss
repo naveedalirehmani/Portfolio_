@@ -353,13 +353,11 @@ nav {
       padding-bottom: 3rem;
       flex-direction: column;
       text-align: center;
-      h1 {
-        font-size: $large;
-        text-transform: capitalize;
-        margin: 0px;
+      h1{
+
+        margin: 6rem 0rem 0rem 0rem;
       }
       h3 {
-        margin-top: 0rem;
         color: $text;
         font-weight: 400;
         font-size: $small;
@@ -374,6 +372,7 @@ nav {
           color: white;
           cursor: pointer;
           transition: 250ms;
+          margin:1rem 0rem;
           &:hover {
             border: 1px solid $hoverGreen;
             background: $hoverGreen;
@@ -383,12 +382,12 @@ nav {
       .socialMedia{
         display: flex;
         justify-content: center;
-        padding-bottom: 3rem;
+        padding: 3rem 0rem;
         .social{
           cursor: pointer;
           box-shadow: 0px 0px 10px rgb(216, 216, 216);
           position: relative;
-          margin:1rem;
+          margin:1.5rem;
           width: 2rem;
           height: 2rem;
           font-size: $medium;
@@ -396,11 +395,36 @@ nav {
           border-radius: 50%;
           padding: 0.5rem;
           transition:100ms;
+          border: 1px solid rgb(184, 184, 184);
           img{
             width: 90%;
           }
-          .dataEmail,.dataInstagram,.dataGithub{
-            display: none;
+          .dataEmail{
+            font-size: $small;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%,-220%);
+            padding: 0.4rem 0.8rem;
+            border-radius: 10px;
+            position: absolute;
+            background-color: rgb(223, 3, 3);
+            color:white;
+            display: block;
+            &:before{
+              content:"";
+              position:absolute;
+              width:10px;
+              height: 10px;
+              top: auto;
+              bottom:-5px;
+              left: 50%;
+              transform: translate(-50%,0%) rotate(-45deg);
+              background-color: rgb(223, 3, 3);
+              color:white;
+              display: block;
+            }
+          }
+          .dataInstagram,.dataGithub{
             font-size: $small;
             top: 50%;
             right: 50%;
@@ -419,41 +443,25 @@ nav {
             }
           }
         }
-        .email{
-          &:hover, &:hover .dataEmail, &:hover .dataEmail::before{
-            background-color: rgb(223, 3, 3);
-            color:white;
-            display: block;
-            opacity: 100%;
-
-          }
-          
-        }
-        .github{
-          &:hover, &:hover .dataGithub, &:hover .dataGithub::before {
+          .dataGithub,.dataGithub::before {
             background-color: rgb(63, 63, 63);
             color: white;
             display: block;
-            opacity: 100%;
 
           }
-          
-        }
-        .instagram{
-          &:hover, &:hover .dataInstagram, &:hover .dataInstagram::before {
+          .dataInstagram,.dataInstagram::before {
             background-color: rgb(248, 48, 108);
             color:white;
             display: block;
-            opacity: 100%;
 
           }
-          
-        }
+
       }
     }
     .gitHubImg {
       // order: 1;
       width: 36rem;
+      padding-bottom: 3rem;
       img {
         width: 90%;
         height: auto;
@@ -546,7 +554,29 @@ h1,h2,h3,h3,h5,h6,p {
       }
     }
   }
-  
+  #gitHub{
+    .gitHubAlign{
+      .gitHubText{
+        .socialMedia{
+          .social{
+            .dataEmail{
+              font-size: $small;
+              top: 50%;
+              right: 50%;
+              transform: translate(50%,-220%);
+              &:before{
+                top: auto;
+                bottom:-5px;
+                left: 50%;
+                transform: translate(-50%,0%) rotate(-45deg);
+              }
+            }
+            
+          }
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 768px) {
   .wrapper{

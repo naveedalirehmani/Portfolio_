@@ -467,13 +467,10 @@ nav a:nth-child(5):hover ~ .animation {
 }
 
 #gitHub .gitHubAlign .gitHubText h1 {
-  font-size: 2rem;
-  text-transform: capitalize;
-  margin: 0px;
+  margin: 6rem 0rem 0rem 0rem;
 }
 
 #gitHub .gitHubAlign .gitHubText h3 {
-  margin-top: 0rem;
   color: #6e6e6e;
   font-weight: 400;
   font-size: 1rem;
@@ -489,6 +486,7 @@ nav a:nth-child(5):hover ~ .animation {
   cursor: pointer;
   -webkit-transition: 250ms;
   transition: 250ms;
+  margin: 1rem 0rem;
 }
 
 #gitHub .gitHubAlign .gitHubText div .upwork:hover {
@@ -503,7 +501,7 @@ nav a:nth-child(5):hover ~ .animation {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 3rem;
+  padding: 3rem 0rem;
 }
 
 #gitHub .gitHubAlign .gitHubText .socialMedia .social {
@@ -511,7 +509,7 @@ nav a:nth-child(5):hover ~ .animation {
   -webkit-box-shadow: 0px 0px 10px #d8d8d8;
           box-shadow: 0px 0px 10px #d8d8d8;
   position: relative;
-  margin: 1rem;
+  margin: 1.5rem;
   width: 2rem;
   height: 2rem;
   font-size: 1.5rem;
@@ -520,14 +518,43 @@ nav a:nth-child(5):hover ~ .animation {
   padding: 0.5rem;
   -webkit-transition: 100ms;
   transition: 100ms;
+  border: 1px solid #b8b8b8;
 }
 
 #gitHub .gitHubAlign .gitHubText .socialMedia .social img {
   width: 90%;
 }
 
-#gitHub .gitHubAlign .gitHubText .socialMedia .social .dataEmail, #gitHub .gitHubAlign .gitHubText .socialMedia .social .dataInstagram, #gitHub .gitHubAlign .gitHubText .socialMedia .social .dataGithub {
-  display: none;
+#gitHub .gitHubAlign .gitHubText .socialMedia .social .dataEmail {
+  font-size: 1rem;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -220%);
+          transform: translate(50%, -220%);
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #df0303;
+  color: white;
+  display: block;
+}
+
+#gitHub .gitHubAlign .gitHubText .socialMedia .social .dataEmail:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: auto;
+  bottom: -5px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(-45deg);
+          transform: translate(-50%, 0%) rotate(-45deg);
+  background-color: #df0303;
+  color: white;
+  display: block;
+}
+
+#gitHub .gitHubAlign .gitHubText .socialMedia .social .dataInstagram, #gitHub .gitHubAlign .gitHubText .socialMedia .social .dataGithub {
   font-size: 1rem;
   top: 50%;
   right: 50%;
@@ -538,7 +565,7 @@ nav a:nth-child(5):hover ~ .animation {
   position: absolute;
 }
 
-#gitHub .gitHubAlign .gitHubText .socialMedia .social .dataEmail:before, #gitHub .gitHubAlign .gitHubText .socialMedia .social .dataInstagram:before, #gitHub .gitHubAlign .gitHubText .socialMedia .social .dataGithub:before {
+#gitHub .gitHubAlign .gitHubText .socialMedia .social .dataInstagram:before, #gitHub .gitHubAlign .gitHubText .socialMedia .social .dataGithub:before {
   content: "";
   position: absolute;
   width: 10px;
@@ -549,29 +576,21 @@ nav a:nth-child(5):hover ~ .animation {
           transform: translate(-50%, 0%) rotate(-45deg);
 }
 
-#gitHub .gitHubAlign .gitHubText .socialMedia .email:hover, #gitHub .gitHubAlign .gitHubText .socialMedia .email:hover .dataEmail, #gitHub .gitHubAlign .gitHubText .socialMedia .email:hover .dataEmail::before {
-  background-color: #df0303;
-  color: white;
-  display: block;
-  opacity: 100%;
-}
-
-#gitHub .gitHubAlign .gitHubText .socialMedia .github:hover, #gitHub .gitHubAlign .gitHubText .socialMedia .github:hover .dataGithub, #gitHub .gitHubAlign .gitHubText .socialMedia .github:hover .dataGithub::before {
+#gitHub .gitHubAlign .gitHubText .socialMedia .dataGithub, #gitHub .gitHubAlign .gitHubText .socialMedia .dataGithub::before {
   background-color: #3f3f3f;
   color: white;
   display: block;
-  opacity: 100%;
 }
 
-#gitHub .gitHubAlign .gitHubText .socialMedia .instagram:hover, #gitHub .gitHubAlign .gitHubText .socialMedia .instagram:hover .dataInstagram, #gitHub .gitHubAlign .gitHubText .socialMedia .instagram:hover .dataInstagram::before {
+#gitHub .gitHubAlign .gitHubText .socialMedia .dataInstagram, #gitHub .gitHubAlign .gitHubText .socialMedia .dataInstagram::before {
   background-color: #f8306c;
   color: white;
   display: block;
-  opacity: 100%;
 }
 
 #gitHub .gitHubAlign .gitHubImg {
   width: 36rem;
+  padding-bottom: 3rem;
 }
 
 #gitHub .gitHubAlign .gitHubImg img {
@@ -679,6 +698,20 @@ nav a:nth-child(5):hover ~ .animation {
     font-weight: 400;
     color: #6e6e6e;
     font-size: 1rem;
+  }
+  #gitHub .gitHubAlign .gitHubText .socialMedia .social .dataEmail {
+    font-size: 1rem;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, -220%);
+            transform: translate(50%, -220%);
+  }
+  #gitHub .gitHubAlign .gitHubText .socialMedia .social .dataEmail:before {
+    top: auto;
+    bottom: -5px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) rotate(-45deg);
+            transform: translate(-50%, 0%) rotate(-45deg);
   }
 }
 
