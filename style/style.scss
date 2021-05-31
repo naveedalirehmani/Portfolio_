@@ -461,9 +461,10 @@ nav {
     .gitHubImg {
       // order: 1;
       width: 36rem;
-      // display: flex;
+      display: flex;
       justify-content: center;
       img {
+        
         width: 80%;
         height: auto;
       }
@@ -476,7 +477,7 @@ nav {
   border-radius: 20px;
   margin: 0rem 1rem 1rem 1rem;
   .footerDiv{
-    padding:2rem 0rem;
+    padding:2rem 1.5rem;
     display: flex;
     justify-content: center;
     text-align:center;
@@ -485,7 +486,7 @@ nav {
 }
 
 div {
-  // border:1px solid red; 
+  border:1px solid red; 
 }
 section {
   // border:1px solid green;
