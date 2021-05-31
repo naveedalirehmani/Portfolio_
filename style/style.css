@@ -1,12 +1,12 @@
 ::-moz-selection {
   color: black;
-  background-color: #ffc6c6;
+  background-color: #cfffc6;
   text-decoration: underline;
 }
 
 ::selection {
   color: black;
-  background-color: #ffc6c6;
+  background-color: #cfffc6;
   text-decoration: underline;
 }
 
@@ -36,7 +36,7 @@ html {
 
 body {
   font-family: "lexend", sans-serif;
-  background: #f8f9fc;
+  background: #f0f3fa;
   margin: 0px;
   padding: 0px;
 }
@@ -495,34 +495,6 @@ nav a:nth-child(5):hover ~ .animation {
   background: #1eb35c;
 }
 
-#gitHub .gitHubAlign .gitHubText div .upwork .dataUpwork {
-  font-size: 1rem;
-  top: 50%;
-  right: 50%;
-  -webkit-transform: translate(50%, 140%);
-          transform: translate(50%, 140%);
-  padding: 0.4rem 0.8rem;
-  border-radius: 10px;
-  position: absolute;
-  background-color: #1eb35c;
-  color: white;
-  display: block;
-}
-
-#gitHub .gitHubAlign .gitHubText div .upwork .dataUpwork:before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  top: -5px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%) rotate(-45deg);
-          transform: translate(-50%, 0%) rotate(-45deg);
-  background-color: #1eb35c;
-  color: white;
-  display: block;
-}
-
 #gitHub .gitHubAlign .gitHubText .socialMedia {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -558,8 +530,8 @@ nav a:nth-child(5):hover ~ .animation {
   font-size: 1rem;
   top: 50%;
   right: 50%;
-  -webkit-transform: translate(50%, -220%);
-          transform: translate(50%, -220%);
+  -webkit-transform: translate(50%, -240%);
+          transform: translate(50%, -240%);
   padding: 0.4rem 0.8rem;
   border-radius: 10px;
   position: absolute;
@@ -587,8 +559,8 @@ nav a:nth-child(5):hover ~ .animation {
   font-size: 1rem;
   top: 50%;
   right: 50%;
-  -webkit-transform: translate(50%, 110%);
-          transform: translate(50%, 110%);
+  -webkit-transform: translate(50%, 140%);
+          transform: translate(50%, 140%);
   padding: 0.4rem 0.8rem;
   border-radius: 10px;
   position: absolute;
@@ -619,23 +591,20 @@ nav a:nth-child(5):hover ~ .animation {
 
 #gitHub .gitHubAlign .gitHubImg {
   width: 36rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 #gitHub .gitHubAlign .gitHubImg img {
-  width: 90%;
+  width: 80%;
   height: auto;
 }
 
 #footer {
   background-color: #3f3f3f;
   border-radius: 20px;
-  margin: 5rem 1rem 1rem 1rem;
+  margin: 0rem 1rem 1rem 1rem;
 }
 
 #footer .footerDiv {
@@ -770,9 +739,6 @@ nav a:nth-child(5):hover ~ .animation {
 @media only screen and (max-width: 768px) {
   .wrapper {
     display: block;
-  }
-  #home {
-    padding: 4rem 0px 10rem 0px;
   }
   #home h1 {
     font-size: 4rem;
