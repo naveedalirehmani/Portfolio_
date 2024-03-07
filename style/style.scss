@@ -152,7 +152,10 @@ nav {
 
 #home {
   margin: auto;
-  padding: 8rem 0px 8rem 0px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 100%;
   h1 {
